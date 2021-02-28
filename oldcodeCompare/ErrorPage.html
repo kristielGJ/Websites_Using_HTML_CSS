@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--Gera Jahja:IN1010: Web Development Coursework 2: Database-Driven Web Application-->
+<!--W3 schools(https://www.w3schools.com/) and my work from labs(Moodle)have been used as aid in programming this website-->
+<html lang="en">
+	<head>
+		 <title>A quick introduction to computer MotherBoards</title>
+		 <meta charset="utf-8">
+		 <!--the following imports are Bootstrap, allows me to access them-->
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		 
+		 <!--import my css file (style.css)-->
+		 <link rel="stylesheet" href="css/style.css">
+		 
+		 <!--required for a hamburger menu (lab 3)-->
+		 <link rel="stylesheet" href=“https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		 
+		 <!-- Add jQuery to your HTML file in order for the JavaScript file to function correctly -->
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		
+		<!-- HTML5 Shiv -->
+		<script src="js/html5shiv.js">  </script>
+		
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+	
+		<div class="jumbotron text-center">
+			<h1> INTERACTIVE MOTHERBOARD</h1>
+		</div>
+		
+		<header>
+			<div class="container">
+				<div class="topnav">
+					<nav id="myTopnav">
+						<a href=index.php>Home</a>
+						
+						<li><a href="logout.php">Logout</a></li>
+						<li><a href="index1.php">Login/SignUp</a></li>
+						<a class="icon" onclick="myFunction()">
+							<i class="fa fa-bars"> </i>
+						</a>
+					</nav>
+				</div>
+			</div>
+		</header>
+		
+
+		<section id="showcase"> 
+
+
+			<div class="container">
+				<h2>Seems like something went wrong... </h2>
+				
+			</div>
+			  
+			<div class="container">
+			  <div class="row">
+				<div class="col-sm-4">
+				  <h3>Please try again</h3>
+				 <button onclick="goBack()">Go Back</button>
+				</div>
+			  </div>
+			</div>
+		</section>
+
+	</body>
+	
+
+	<!--javascript code for highlighting navigation bar-->
+	<script>
+		function goBack() {
+		  window.history.back();
+		}
+
+		function myFunction() {
+		 var x = document.getElementById("myTopnav");
+		 if (x.className === "topnav") {
+		 x.className += " responsive";
+		 }
+		 else {
+		 x.className = "topnav";
+		 }
+		}
+	</script>
+
+	<footer>
+		<p>Gera Jahja:Coursework 2: IN1010: Web Development, Copyright &copy; 2020</p>
+	</footer>
+</html>

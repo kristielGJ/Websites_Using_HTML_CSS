@@ -1,0 +1,78 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+header{
+	background: #000000;
+	color: #000000;
+	padding-top: 10px;
+	min-height: 50px;
+	border-bottom:#000000;
+}
+header a{
+	font-family: 'Open Sans', sans-serif;
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+header nav{
+	 float: left;
+}
+.topnav {
+ overflow: hidden;
+}
+.topnav a {
+ float: left;
+ display: block;
+ color: #f2f2f2;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+ font-size: 16px;
+}
+.topnav a:hover {
+ background-color: #ddd;
+ color: black;
+}
+.topnav .icon {
+ display: none;
+}
+
+header .current a{
+	font-family: 'Open Sans', sans-serif;
+	color: darkslategrey;
+	font-weight: bold;
+}
+header a:hover{
+	font-family: 'Open Sans', sans-serif;
+	color: #cccccc;
+	font-weight: bold;
+}
+form{
+  width: 40%;
+  padding: 30px;
+  border: 1px solid #cbcbcb;
+  margin: 5px auto;
+}
+.textField{
+  margin-top: 2px;
+  height: 28px;
+  border: 1px solid #5E6E66;
+  font-size: 16px;
+  padding: 1px;
+  width: 100%;
+}
+#error_msg{
+  width:50%;
+  margin: 5px auto;
+  height: 30px;
+  border: 1px solid #FF0000;
+  background: #FFB988;
+  color: #FF0000;
+  text-align:  center;
+  padding-top: 10px;
+}
+td{
+  text-align: right;
+}

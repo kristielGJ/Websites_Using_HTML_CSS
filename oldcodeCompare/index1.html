@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--Gera Jahja:IN1010: Web Development Coursework 2: Database-Driven Web Application-->
+<!--W3 schools(https://www.w3schools.com/) and my work from labs(Moodle)have been used as aid in programming this website-->
+<html lang="en">
+	<head>
+		 <title>MotherBoard</title>
+		 <meta charset="utf-8">
+		 <!--the following imports are Bootstrap, allows me to access them-->
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		 
+		 <!--import my css file (style.css)-->
+		 <link rel="stylesheet" href="css/style.css">
+		 
+		 <!--required for a hamburger menu (lab 3)-->
+		 <link rel="stylesheet" href=“https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		 
+		 <!-- Add jQuery to your HTML file in order for the JavaScript file to function correctly -->
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		
+		<!-- HTML5 Shiv -->
+		<script src="js/html5shiv.js">  </script>
+	</head>
+	<header>
+			<div class="container">
+				<div class="topnav">
+					<nav id="myTopnav">
+						<a href=index.php>Home</a>
+						<a href=“#dictionary”>Dictionary</a>
+						<li><a href="logout.php">Logout</a></li>
+						<li><a href="index1.html">Login/SignUp</a></li>
+						<a class="icon" onclick="myFunction()">
+							<i class="fa fa-bars"> </i>
+						</a>
+					</nav>
+				</div>
+			</div>
+	</header>
+	<body>
+		<!-- 
+				*    Title: Database- login help
+				*    Author: EasyTutorials on YouTube
+				*    Date: 2020
+				*    Availability: https://youtu.be/NXAHkqiIepc
+			-->
+		
+			<div class="jumbotron text-center">
+				<h1>Login</h1>
+			</div>
+			
+			<div class="container">
+				<div class="login-Box">
+					<div class="col-md-6 log-in">
+						<h2> Login Here</h2>
+						<form action="loginDb.php" method "post"> <!-- Using a form so that the php code can be reffered to as a script-->
+							<div class="form-group"><!--bootstrap class: username -->
+								<lable>Username</label>
+								<input type="text" name ="name" class="form-control" required>
+							</div>
+							<div class="form-group"><!--bootstrap class: password-->
+								<lable>Password</label>
+								<input type="password" name ="password" class="form-control" required>
+							</div>
+							
+							<button type="submit" class="btn btn-primary"> Login </button>
+							
+						</form>
+					</div>
+					<div class="col-md-6 sign-up">
+						<h2> SignUp Here</h2>
+						<form action="signUpDb.php" method "post"> <!-- Using a form so that the php code can be reffered to as a script-->
+							<div class="form-group"><!--bootstrap class: username -->
+								<lable>Username</label>
+								<input type="text" name ="name" class="form-control" required>
+							</div>
+							<div class="form-group"><!--bootstrap class: password-->
+								<lable>Password</label>
+								<input type="password" name ="password" class="form-control" required>
+							</div>
+							
+							<button type="submit" class="btn btn-primary"> Sign Up </button>
+							
+						</form>
+					</div>
+				</div>
+			</div>
+		</body>
+		<script>
+			function myFunction() {
+			 var x = document.getElementById("myTopnav");
+			 if (x.className === "topnav") {
+			 x.className += " responsive";
+			 }
+			 else {
+			 x.className = "topnav";
+			 }
+			}
+		</script>
+	
+	<footer>
+		<p>Gera Jahja:Coursework 2: IN1010: Web Development, Copyright &copy; 2020</p>
+	</footer>
+</html>
+		

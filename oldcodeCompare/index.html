@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--Gera Jahja:IN1010: Web Development Coursework 2: Database-Driven Web Application-->
+<!--W3 schools(https://www.w3schools.com/) and my work from labs(Moodle)have been used as aid in programming this website-->
+<html lang="en">
+	<head>
+		 <title>MotherBoard</title>
+		 <meta charset="utf-8">
+		 <!--the following imports are Bootstrap, allows me to access them-->
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		 
+		 <!--import my css file (style.css)-->
+		 <link rel="stylesheet" href="style.css">
+		 
+		 <!--required for a hamburger menu (lab 3)-->
+		 <link rel="stylesheet" href=“https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		 
+		 <!-- Add jQuery to your HTML file in order for the JavaScript file to function correctly -->
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		
+		<!-- HTML5 Shiv -->
+		<script src="js/html5shiv.js">  </script>
+	</head>
+	<body>
+	
+		<div class="jumbotron text-center">
+			<h1>MotherBoard</h1>
+		</div>
+		
+		<header>
+			<div class="container">
+				<div class="topnav">
+					<nav id="myTopnav">
+						<a href=index.html>Home</a>
+						<a href=“#dictionary”>Dictionary</a>
+						<li><a href="logout.php">Logout</a></li>
+						<li><a href="login.php">Login</a></li>
+						<li><a href="register.php">Register</a></li>
+						<a class="icon" onclick="myFunction()">
+							<i class="fa fa-bars"> </i>
+						</a>
+					</nav>
+				</div>
+			</div>
+		</header>
+		
+
+		<section id="showcase"> 
+
+			<!--
+			*    Title: Responsive images
+			*    Author: W3Schools.com
+			*    Date: 2020
+			*    Availability: https://www.w3schools.com/bootstrap/bootstrap_images.asp
+			-->
+			<div class="container">
+				<h2>Learn about different parts of a Motherboard! </h2>
+				<!--The .img-responsive class makes the image scale nicely to the parent element-->
+				<p>A motherboard is one of the most essential parts of a computer system. It holds together many of the crucial components of a computer.</p>
+				<!-- definition from:https://study.com/academy/lesson/what-is-a-motherboard-definition-function-diagram.html -->
+				<img class="img-responsive" src="Mother_Board.jpg" alt="MotherBoard" width="560" height="445"> 
+				<!-- the image has been taken from the website:https://www.kencorner.com/computer-motherboard-components/ -->
+			</div>
+			  
+			<div class="container">
+			  <div class="row">
+				<div class="col-sm-4">
+				  <h3>Description</h3>
+				  <p>Description goes here </p>
+				</div>
+				
+			  </div>
+			</div>
+		</section>
+
+	</body>
+	
+
+	<body>
+
+		
+		<div class="jumbotron text-center">
+			<h1>Quiz</h1>
+		</div>
+		
+        <div class="quiz-container"><!--calls the javascript class "quiz-container", the code has been based off of lab 4(moodle)--> 
+            <div id="quiz"></div>
+        </div>
+
+        <button id="previous">Previous Question</button>
+        <button id="next">Next Question</button>
+        <button id="submit">Submit Quiz</button>
+        <div id="results"></div>
+        
+        <script src="quiz-behaviour.js"></script>
+    </body>
+	
+	<!--javascript code for highlighting navigation bar-->
+	<script>
+		function myFunction() {
+		 var x = document.getElementById("myTopnav");
+		 if (x.className === "topnav") {
+		 x.className += " responsive";
+		 }
+		 else {
+		 x.className = "topnav";
+		 }
+		}
+	</script>
+	
+	<?php
+      if(isset($_SESSION['message'])){
+      echo "<div id='error_msg'>".$_SESSION['message']."</div>";
+      unset($_SESSION['message']);
+    }
+    ?>
+	<footer>
+		<p>Gera Jahja:Coursework 2: IN1010: Web Development, Copyright &copy; 2020</p>
+	</footer>
+</html>
