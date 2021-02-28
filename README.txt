@@ -1,6 +1,6 @@
 Q/A: What I have implemented in my Website.
 
-Gera Jahja, Coursework 2 submission, Web development , April 2020
+Gera Jahja, Web development , April 2020
 Website link: https://smcse.city.ac.uk/student/adbc524/index.php
 
 Q:Your website needs to be responsive: 
